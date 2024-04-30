@@ -1,8 +1,40 @@
-# React + Vite
+# Movies
+This is a React application that displays a list of movies with filtering options based on language, country, and genre. The application fetches movie data from a local JSON file and renders it in a responsive grid layout.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
 
-Currently, two official plugins are available:
+Display movie details including title, languages, countries, genres, and poster image
+Filter movies by language, country, and genre
+Responsive design for mobile and desktop browsers
+Text truncation with ellipsis for long movie details
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+
+* React
+* Tailwind CSS
+* Axios 
+
+## Local Setup
+
+Follow these steps to run the application locally:
+
+#### Clone the repository:
+
+```bash
+git clone https://github.com/your-username/ition-movie.git
+```
+#### Navigate to the project directory:
+
+```bash
+cd movie-app
+```
+#### Install dependencies:
+
+```bash
+npm install
+```
+#### Start the development server:
+
+```bash
+npm start
+```
