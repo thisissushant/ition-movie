@@ -38,3 +38,6 @@ npm install
 ```bash
 npm start
 ```
+
+## Live Project
+[Click here to view live app](https://ition-movie-liart.vercel.app/)
