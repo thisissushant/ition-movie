@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const lineClampPlugin = require("@tailwindcss/line-clamp");
+const lineClampPlugin = "@tailwindcss/line-clamp";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {

@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import movieData from "./assets/movie.json";
 import MovieList from "./components/MovieList";
 import FilterBar from "./components/FilterBar";
 
 const App = () => {
-  const [movies, setMovies] = useState(movieData);
+  const [movies] = useState(movieData);
   const [filters, setFilters] = useState({
     language: "",
     country: "",
