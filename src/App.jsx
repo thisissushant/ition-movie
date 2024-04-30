@@ -26,13 +26,15 @@ const App = () => {
   });
 
   return (
-    <div className="container mx-auto px-4 py-8 bg-black">
-      <FilterBar
-        filters={filters}
-        onFilterChange={handleFilterChange}
-        movies={movies}
-      />
-      <MovieList movies={filteredMovies} />
+    <div className="bg-black">
+      <div className="container mx-auto px-4 py-8 bg-black">
+        <FilterBar
+          filters={filters}
+          onFilterChange={handleFilterChange}
+          movies={movies}
+        />
+        <MovieList movies={filteredMovies} />
+      </div>
     </div>
   );
 };
