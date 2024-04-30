@@ -1,13 +1,40 @@
-import {} from "react";
+import React, { useState, useEffect } from "react";
+import movieData from "./assets/movie.json";
+import MovieList from "./components/MovieList";
+import FilterBar from "./components/FilterBar";
 
-import "./App.css";
+const App = () => {
+  const [movies, setMovies] = useState(movieData);
+  const [filters, setFilters] = useState({
+    language: "",
+    country: "",
+    genre: "",
+  });
 
-function App() {
+  const handleFilterChange = (e) => {
+    const { name, value } = e.target;
+    setFilters({ ...filters, [name]: value });
+  };
+
+  const filteredMovies = movies.filter((movie) => {
+    const { language, country, genre } = filters;
+    return (
+      (!language || movie.movielanguages.includes(language)) &&
+      (!country || movie.moviecountries.includes(country)) &&
+      (!genre || movie.moviegenres.includes(genre))
+    );
+  });
+
   return (
-    <>
-      <h1 className="text-red-500 font-bold ">This is App Page</h1>
-    </>
+    <div className="container mx-auto px-4 py-8">
+      <FilterBar
+        filters={filters}
+        onFilterChange={handleFilterChange}
+        movies={movies}
+      />
+      <MovieList movies={filteredMovies} />
+    </div>
   );
-}
+};
 
 export default App;
