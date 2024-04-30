@@ -21,12 +21,12 @@ Follow these steps to run the application locally:
 #### Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/ition-movie.git
+git clone https://github.com/thisissushant/ition-movie
 ```
 #### Navigate to the project directory:
 
 ```bash
-cd movie-app
+cd ition-movie
 ```
 #### Install dependencies:
 
